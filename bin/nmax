@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-# frozen_string_literal: true
-
-# TODO change on require
-require_relative '../lib/nmax'
-
-puts Nmax.call(ARGV[0])
