@@ -19,6 +19,10 @@ class Nmax
   private
 
   def scan_numbers
-    puts STDIN.gets
+    while line = STDIN.gets do
+      line.scan(/[0-9]+/) do |match|
+        @numbers << match.to_i
+      end
+    end
   end
 end
