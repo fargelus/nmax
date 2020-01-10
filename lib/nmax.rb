@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'nmax/version'
+require 'nmax/meta'
 
 module Nmax
   class Error < StandardError; end
@@ -14,7 +14,7 @@ module Nmax
 
     def calc
       @numbers.max(@max_numbers_count)
-              .join(', ')
+              .join(Nmax::SEPARATOR)
     end
 
     def self.call(num)

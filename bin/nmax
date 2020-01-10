@@ -3,4 +3,4 @@
 
 require 'nmax'
 
-puts Nmax.call(ARGV[0])
+puts Nmax::Scanner.call(ARGV[0])
