@@ -1,6 +1,6 @@
 # Nmax
 
-Simple gem for extracting numbers in text and sort them in descendancy order.
+Simple gem for extracting numbers from text and sort them in descendancy order.
 
 ## Installation
 
@@ -20,8 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
-Nmax::Scan.call(n),
-n: total amount of numbers to search
+_Nmax::Scan.call(n)_,  
+n: total amount of numbers to search.
 
 ## License
 
