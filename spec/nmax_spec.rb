@@ -9,7 +9,19 @@ RSpec.describe Nmax do
   end
 
   it 'prints only one number' do
-    # expect(system("#{command} 1")).
-    puts Nmax::SEPARATOR
+    output = `#{command} 1`
+    number_count = output.split(Nmax::SEPARATOR)
+                         .size
+    expect(number_count).to eql 1
+  end
+
+  it 'prints nothing when no args passed' do
+    output = `#{command}`
+    expect(output).to eql "\n"
+  end
+
+  it 'prints maximum number' do
+    output = `echo 1, 2, 3 | bin/nmax 1`
+    expect(output.to_i).to eql 3
   end
 end
