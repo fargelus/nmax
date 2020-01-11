@@ -1,4 +1,5 @@
 # Nmax
+[![Build Status](https://travis-ci.org/fargelus/nmax.svg?branch=master)](https://travis-ci.org/fargelus/nmax)
 
 Simple gem for extracting numbers from text and sort them in descendancy order.
 
