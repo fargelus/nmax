@@ -9,10 +9,10 @@ module Nmax
     def initialize(numbers)
       @max_numbers_count = numbers.to_i
       @numbers = []
-      scan_numbers
     end
 
     def calc
+      scan_numbers
       @numbers.max(@max_numbers_count)
               .join(Nmax::SEPARATOR)
     end
